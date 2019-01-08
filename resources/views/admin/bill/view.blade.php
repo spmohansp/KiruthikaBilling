@@ -43,7 +43,7 @@
                              <form action="{{ route('admin.DeleteBill',$Bill->id) }}" method="POST">
                                 {{ csrf_field() }}
                                 <input type="hidden" name="_method" value="DELETE">
-                                <button class="btn btn-primary" type="button" onclick="window.location.href='#'">View</button>
+                                <button class="btn btn-primary" type="button" onclick="window.location.href='{{ route('admin.printBill',$Bill->id) }}'">View</button>
                                 <a href="{{ route('admin.EditBill',$Bill->id) }}" class="btn btn-success">Edit</a>
                                 <button class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</i> </button>
                             </form>

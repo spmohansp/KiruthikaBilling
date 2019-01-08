@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 use App\Admin;
 use App\Bill;
+use App\Client;
 use Illuminate\Http\Request;
 
 class BillController extends Controller
@@ -96,6 +97,17 @@ class BillController extends Controller
         try {
             Bill::findorfail($id)->delete();
             return back()->with('success','Bill Deleted Sucessfully!!');
+        } catch (\Exception $e) {
+            return back()->with('wrong','Sorry! something Went To Wrong.');
+        }
+    }
+
+    public function printBill($id){
+        try {
+            $Admin = Admin::findorfail(auth()->user()->id);
+            $Bill = Bill::findorfail($id);
+            $Client = Client::findorfail($Bill->id);
+            return view('admin.bill',compact('Bill','Admin','Client'));
         } catch (\Exception $e) {
             return back()->with('wrong','Sorry! something Went To Wrong.');
         }

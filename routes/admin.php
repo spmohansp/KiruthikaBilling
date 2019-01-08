@@ -32,3 +32,5 @@ Route::get('/bills','BillController@ViewAllBills')->name('ViewAllBills');
 Route::get('/bills/{id}/edit','BillController@EditBill')->name('EditBill');
 Route::post('/bills/{id}/update','BillController@updateBill')->name('updateBill');
 Route::delete('/bill/{id}/delete','BillController@DeleteBill')->name('DeleteBill');
+
+Route::get('/bill/{id}/print','BillController@printBill')->name('printBill');

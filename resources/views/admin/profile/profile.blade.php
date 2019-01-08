@@ -32,7 +32,9 @@
                     :
                 </div>
                 <div class="col-lg-8 col-xs-8 col-md-8">
-                    {{ $Profile->logo }}
+                @if($Profile->logo)
+                    <img src="{{ $Profile->logo }}" alt="lOGO" height="42" width="42">
+                 @endif
                 </div>
             </div>
             <hr style="height:2px;border:none;background-color:grey;">

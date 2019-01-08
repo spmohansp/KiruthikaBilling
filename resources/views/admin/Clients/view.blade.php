@@ -39,7 +39,6 @@
                                 <th>Phone Number</th>
                                 <th>Address</th>
                                 <th>Notes</th>
-                                <th>Status</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -52,7 +51,6 @@
                                 <td>{{ $Client->mobile }}</td>
                                 <td>{{ $Client->address }}</td>
                                 <td>{{ $Client->notes }}</td>
-                                <td>-</td>
                                 <td>
                                     <form action="{{ route('admin.DeleteClient', $Client->id) }}" method="POST">
                                         {{ csrf_field() }}
