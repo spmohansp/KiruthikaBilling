@@ -23,6 +23,8 @@ class CreateClientsTable extends Migration
             $table->string('GST')->nullable();
             $table->string('PAN')->nullable();
             $table->string('notes')->nullable();
+            $table->string('truck_number')->nullable();
+            $table->string('consigment_number')->nullable();
             $table->timestamps();
         });
     }

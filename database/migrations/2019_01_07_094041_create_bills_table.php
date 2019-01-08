@@ -19,6 +19,7 @@ class CreateBillsTable extends Migration
             $table->foreign('client_id')->references('id')->on('clients');
             $table->string('invoice');
             $table->string('date');
+            $table->longText('textarea')->nullable();
             $table->string('FREIGHT')->nullable();
             $table->string('HEIGHT_CASE')->nullable();
             $table->string('HOLTING')->nullable();

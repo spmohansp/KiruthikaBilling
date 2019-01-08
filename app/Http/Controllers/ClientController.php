@@ -29,6 +29,8 @@ class ClientController extends Controller
             $Clients->GST = request('GST');
             $Clients->PAN = request('PAN');
             $Clients->notes = request('notes');
+            $Clients->truck_number = request('truck_number');
+            $Clients->consigment_number = request('consigment_number');
             $Clients->save();
             return back()->with('success','Clients Added Sucessfully!!');
         } catch (\Exception $e) {
@@ -69,6 +71,8 @@ class ClientController extends Controller
             $Clients->GST = request('GST');
             $Clients->PAN = request('PAN');
             $Clients->notes = request('notes');
+            $Clients->truck_number = request('truck_number');
+            $Clients->consigment_number = request('consigment_number');
             $Clients->save();
             return back()->with('success','Clients Update Sucessfully!!');
         } catch (\Exception $e) {

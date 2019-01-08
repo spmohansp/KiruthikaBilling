@@ -49,7 +49,7 @@
                 <div class="row" style="margin-top:0%">
                     <div class="col-xs-12 col-lg-4 col-sm-4">
                         <div class="form-group">
-                            <textarea class="form-control form-control-lg" id="" placeholder="Drop your tetx here ..." rows="12"></textarea>
+                            <textarea class="form-control form-control-lg" id="" name="textarea" placeholder="Drop your tetx here ..." rows="12"></textarea>
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-8 col-sm-8">

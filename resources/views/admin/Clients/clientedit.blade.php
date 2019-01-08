@@ -68,6 +68,12 @@
                             <div class="form-group">
                                 <input class="form-control form-control-lg" type="" aria-describedby="emailHelp" name="notes" value="{{$Client->notes}}">
                             </div>
+                            <div class="form-group">
+                                <input class="form-control form-control-lg" type="" aria-describedby="emailHelp" name="truck_number" value="{{$Client->truck_number}}" placeholder="Enter Truck Number">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control form-control-lg" type="" aria-describedby="emailHelp" name="consigment_number" value="{{$Client->consigment_number}}" placeholder="Enter Consigment Number">
+                            </div>
                             <div class="">
                                 <button class="btn btn-primary" type="submit">Update</button>
                             </div>

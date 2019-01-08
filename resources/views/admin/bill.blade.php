@@ -65,11 +65,11 @@
                 </tr>
                 <tr>
                   <th style="width:50%;padding-top:7px;padding-bottom:7px;" > Truck No</th>
-                  <th style="padding-top:7px;padding-bottom:7px;"></th>
+                  <th style="padding-top:7px;padding-bottom:7px;">{{ $Client->truck_number }}</th>
                 </tr>
                 <tr>
                   <th style="width:50%;padding-top:7px;padding-bottom:7px;" > Consigment No</th>
-                  <th style="padding-top:7px;padding-bottom:7px;"></th>
+                  <th style="padding-top:7px;padding-bottom:7px;">{{ $Client->consigment_number }}</th>
                 </tr>
 
               </thead>
@@ -79,7 +79,7 @@
         <div class="row" style="margin-top:0%;padding-bottom:0%">
           <div class=" col-lg-6 col-xs-6 box">
             <br>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            {{ $Bill->textarea }}
           </div>
           <div class=" col-lg-6 col-xs-6 box">
             <table class="table table-bordered">

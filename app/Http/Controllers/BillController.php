@@ -37,6 +37,7 @@ class BillController extends Controller
             }
 
             $Bill->date = request('date');
+            $Bill->textarea = request('textarea');
             $Bill->FREIGHT = request('FREIGHT');
             $Bill->HEIGHT_CASE = request('HEIGHT_CASE');
             $Bill->HOLTING = request('HOLTING');
@@ -77,6 +78,7 @@ class BillController extends Controller
             $Bill = Bill::findorfail($id);
             $Bill->client_id = request('client_id');
             $Bill->date = request('date');
+            $Bill->textarea = request('textarea');
             $Bill->FREIGHT = request('FREIGHT');
             $Bill->HEIGHT_CASE = request('HEIGHT_CASE');
             $Bill->HOLTING = request('HOLTING');
